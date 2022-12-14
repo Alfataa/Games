@@ -1,62 +1,51 @@
 {
-  "User": [
+  "games": [
     {
       "id": 1,
-      "email": "caesar",
-      "password": "123"
+      "cover": "https://1.bp.blogspot.com/-Lx2Tuu78xJ4/Y5lTZ7LcwmI/AAAAAAABUuo/uNTF_9Vcf9gbHBVVUq64QDJ_fmv_sD1CQCNcBGAsYHQ/s460/the-witcher-3-complete-pc-cover.jpg",
+      "name": "The Witcher 3 Wild Hunt Complete Edition-GOG",
+      "platform": "PC",
+      "release": "Aug 30, 2016",
+      "genre": "Action, Adventure, RPG",
+      "publisher": "CD Projekt",
+      "description": "You are Geralt of Rivia, mercenary monster slayer. Before you stands a war-torn, monster-infested continent you can explore at will. Your current contract? Tracking down Ciri — the Child of Prophecy, a living weapon that can alter the shape of the world. \n The Complete Edition contains the base game, offering a huge, over 100-hour long, open-world adventure, as well as both of its massive story expansions: Hearts of Stone & Blood and Wine worth an extra 50 hours of gameplay! \n It also comes with all additional content released for the game, alongside new features and items, including a built-in Photo Mode, swords, armor, and alternate outfits inspired by The Witcher Netflix series — and more!"
+    }
+  ],
+  "users": [
+    {
+      "username": "daaa",
+      "email": "daa@gmail.com",
+      "password": "123",
+      "id": 1
     },
     {
-      "email": "sesar",
-      "password": "123",
+      "username": "adam",
+      "password": "adam11",
+      "email": "adam11@gmail.com",
       "id": 2
     },
     {
-      "email": "aku",
-      "password": "123",
+      "username": "Dami",
+      "password": "Dami11",
+      "email": "Dami12@gmail.com",
       "id": 3
     }
   ],
-
-  "Gambar": 
+  "studios": [
     {
-      "data":[
-        {
-      "id":1,
-      "name": "Michael Angelo's Painting",
-      "img": "https://images.unsplash.com/flagged/photo-1572392640988-ba48d1a74457?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80",
-      "years":1564
+      "name": "Dream Factory Studio",
+      "tahunBerdiri": 2019,
+      "id": 1
     },
     {
-      "name": "Saint Cecilia of Rome",
-      "img": "https://images.unsplash.com/photo-1578320340743-0314d3d66851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=488&q=80",
-      "years":230,
-      "id":2
+      "name": "Luck Factory Studio",
+      "tahunBerdiri": 2002,
+      "id": 2
     },
     {
-      "name": "A Girl with Flowers on the Grass",
-      "img": "https://images.unsplash.com/photo-1579783928621-7a13d66a62d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=390&q=80",
-      "years":1878,
-      "id":3
-    },
-    {
-      "name": "The River Severn at Shrewsbury",
-      "img": "https://images.unsplash.com/photo-1578926375605-eaf7559b1458?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1063&q=80",
-      "years":1770,
-      "id":4
-    },
-    {
-      "name": "Landscape with Cattle",
-      "img": "https://images.unsplash.com/photo-1586537049236-b212dc756931?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1019&q=80",
-      "years":1804,
-      "id":5
-    },
-    {
-      "name": "Interior of a Cathedral",
-      "img": "https://images.unsplash.com/photo-1578301978162-7aae4d755744?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=377&q=80",
-      "years":1852,
-      "id":6
+      "name": "Nightmare Factory Studio",
+      "tahunBerdiri": 2001,
+      "id": 3
     }
   ]
-}
-  
 }
