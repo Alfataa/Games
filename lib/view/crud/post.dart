@@ -27,7 +27,7 @@ class _PostState extends State<Post> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 0, 0, 0),
+        backgroundColor: Colors.redAccent,
         elevation: 0,
         title: const Text(
           'POST',

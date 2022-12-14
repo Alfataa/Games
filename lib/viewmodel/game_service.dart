@@ -5,7 +5,7 @@ import '../model/Games.dart';
 import '../model/User.dart';
 
 class GameService {
-  final String baseUrlApi = "http://192.168.5.21:3000";
+  final String baseUrlApi = "http://192.168.0.123:3000";
 
   Future<List<GamesModel>> fetchDataGame() async {
     Response response = await Dio().get("$baseUrlApi/games");

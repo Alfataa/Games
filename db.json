@@ -13,39 +13,16 @@
   ],
   "users": [
     {
-      "username": "daaa",
-      "email": "daa@gmail.com",
+      "username": "tes",
+      "email": "tes@gmail.com",
       "password": "123",
       "id": 1
     },
     {
-      "username": "adam",
-      "password": "adam11",
-      "email": "adam11@gmail.com",
+      "username": "tz",
+      "password": "tz",
+      "email": "tztz@gmail.com",
       "id": 2
-    },
-    {
-      "username": "Dami",
-      "password": "Dami11",
-      "email": "Dami12@gmail.com",
-      "id": 3
-    }
-  ],
-  "studios": [
-    {
-      "name": "Dream Factory Studio",
-      "tahunBerdiri": 2019,
-      "id": 1
-    },
-    {
-      "name": "Luck Factory Studio",
-      "tahunBerdiri": 2002,
-      "id": 2
-    },
-    {
-      "name": "Nightmare Factory Studio",
-      "tahunBerdiri": 2001,
-      "id": 3
     }
   ]
 }

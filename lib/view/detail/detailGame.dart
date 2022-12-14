@@ -31,7 +31,7 @@ class _DetailGameState extends State<DetailGame> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 0, 0, 0),
+        backgroundColor: Colors.redAccent,
         actions: [
           Padding(
               padding: const EdgeInsets.only(right: 20.0),
@@ -84,16 +84,8 @@ class _DetailGameState extends State<DetailGame> {
                 child: Column(
                   children: <Widget>[
                     Container(
-                      width: 395,
-                      height: 470,
-                      child: Image.network(
-                        widget.game.cover,
-                        fit: BoxFit.cover,
-                      ),
-                    ),
-                    Container(
                       padding: const EdgeInsets.all(16),
-                      child: Row(
+                      child: Stack(
                         children: <Widget>[
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -110,7 +102,6 @@ class _DetailGameState extends State<DetailGame> {
                                     color: Color.fromARGB(255, 49, 49, 49)),
                               ),
                               SizedBox(height: 10),
-                              SizedBox(height: 10),
                               Text(
                                 "Publisher : ${widget.game.publisher}",
                                 style: TextStyle(
@@ -125,6 +116,14 @@ class _DetailGameState extends State<DetailGame> {
                             ],
                           ),
                         ],
+                      ),
+                    ),
+                    Container(
+                      width: 395,
+                      height: 470,
+                      child: Image.network(
+                        widget.game.cover,
+                        fit: BoxFit.cover,
                       ),
                     ),
                     Container(

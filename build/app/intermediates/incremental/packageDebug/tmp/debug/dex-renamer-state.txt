@@ -1,4 +1,4 @@
-#Fri Dec 09 14:10:50 ICT 2022
-base.0=D\:\\backup C\\MOBILE\\ramene\\ramene\\ramene\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+#Wed Dec 14 18:32:43 ICT 2022
+base.0=D\:\\laragon\\www\\Mobile\\Jokian\\Alfat\\ramene-20221211T115225Z-001\\Games\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

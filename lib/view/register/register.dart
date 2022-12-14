@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:dio/dio.dart';
+import 'package:ramene/constant/constant.dart';
 import 'package:ramene/viewmodel/user_service.dart';
 
 import '../login/login.dart';
@@ -19,6 +20,10 @@ class _RegisterState extends State<Register> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: white,
+        elevation: 0,
+      ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 23),
         child: Column(
@@ -26,7 +31,7 @@ class _RegisterState extends State<Register> {
             const Align(
               alignment: Alignment.centerLeft,
               child: Text(
-                "Get Your Ramen",
+                "SIGN UP",
                 style: TextStyle(
                   color: Colors.black,
                   fontFamily: 'Poppins SemiBold',
@@ -119,8 +124,6 @@ class _RegisterState extends State<Register> {
                     .get('$baseUrl/users?email=${controllerEmail.text}');
                 var username = await Dio()
                     .get('$baseUrl/users?username=${controllerUsername.text}');
-                // var password = await Dio()
-                //     .get('$baseUrl/user?password=${controllerPassword.text}');
 
                 if (username.data.length > 0) {
                   ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
@@ -139,7 +142,7 @@ class _RegisterState extends State<Register> {
                   controllerEmail.clear();
                   controllerPassword.clear();
                 } else {
-                  var response = await Dio().post('$baseUrl/user', data: {
+                  var response = await Dio().post('$baseUrl/users', data: {
                     "username": controllerUsername.text,
                     "email": controllerEmail.text,
                     "password": controllerPassword.text
@@ -155,7 +158,7 @@ class _RegisterState extends State<Register> {
                     fontSize: 18,
                   )),
               style: ElevatedButton.styleFrom(
-                  primary: Colors.orangeAccent,
+                  primary: Colors.redAccent,
                   minimumSize: const Size.fromHeight(55),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20),
@@ -182,7 +185,7 @@ class _RegisterState extends State<Register> {
                       style: TextStyle(
                         fontFamily: 'Poppins Light',
                         fontSize: 16,
-                        color: Colors.orangeAccent,
+                        color: Colors.redAccent,
                       )),
                 ),
               ],

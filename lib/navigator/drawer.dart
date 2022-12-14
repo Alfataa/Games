@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ramene/view/login/login.dart';
 
 import '../model/User.dart';
 import '../view/home/home.dart';
@@ -36,6 +37,11 @@ class _DrawerWidgetState extends State<DrawerWidget> {
                       builder: (context) => Profile(
                             user: widget.user,
                           )))),
+          _drawerItem(
+              icon: Icons.power_settings_new,
+              text: 'Logout',
+              onTap: () => Navigator.pushReplacement(
+                  context, MaterialPageRoute(builder: (context) => Login()))),
         ],
       ),
     );
@@ -44,13 +50,16 @@ class _DrawerWidgetState extends State<DrawerWidget> {
 
 Widget _drawerHeader() {
   return const UserAccountsDrawerHeader(
+    decoration: BoxDecoration(
+      color: Colors.redAccent,
+    ),
     currentAccountPicture: ClipOval(
       child: Image(
-          image: AssetImage("assets/images/Profile/eisa.png"),
+          image: AssetImage("assets/images/Profile/eisa.jpg"),
           fit: BoxFit.cover),
     ),
-    accountName: Text('Adam Badruzzaman'),
-    accountEmail: Text('adambadruzs@gmail.com'),
+    accountName: Text('Alfat Tauhidillah'),
+    accountEmail: Text('alfat@gmail.com'),
   );
 }
 

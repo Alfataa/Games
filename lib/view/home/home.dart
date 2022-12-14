@@ -31,7 +31,7 @@ class _HomeState extends State<Home> {
             return Text(snapshot.error.toString());
           } else {
             return Container(
-              color: black,
+              color: white,
               child: ListView.builder(
                   itemCount: snapshot.data!.length,
                   itemBuilder: (context, index) {
@@ -58,7 +58,8 @@ class _HomeState extends State<Home> {
                           ),
                           const SizedBox(height: 10),
                           Padding(
-                              padding: const EdgeInsets.only(right: 140),
+                              padding:
+                                  const EdgeInsets.only(left: 10, right: 10),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
@@ -67,14 +68,14 @@ class _HomeState extends State<Home> {
                                     style: const TextStyle(
                                         fontSize: 16,
                                         fontWeight: FontWeight.bold,
-                                        color: white),
+                                        color: black),
                                   ),
                                   const SizedBox(height: 5),
                                   Text(
                                     snapshot.data![index].genre,
                                     style: const TextStyle(
                                       fontSize: 13,
-                                      color: white,
+                                      color: black,
                                     ),
                                   ),
                                   const SizedBox(height: 15),
@@ -83,7 +84,7 @@ class _HomeState extends State<Home> {
                                     style: const TextStyle(
                                       fontSize: 13,
                                       fontWeight: FontWeight.w500,
-                                      color: white,
+                                      color: black,
                                     ),
                                   ),
                                   const SizedBox(height: 20),
@@ -109,7 +110,7 @@ class _HomeState extends State<Home> {
             return Text(snapshot.error.toString());
           } else {
             return Container(
-                color: black,
+                color: white,
                 child: ListView.builder(
                     itemCount: snapshot.data!.length,
                     itemBuilder: (context, index) {
@@ -137,7 +138,8 @@ class _HomeState extends State<Home> {
                             ),
                             const SizedBox(height: 10),
                             Padding(
-                                padding: const EdgeInsets.only(right: 140),
+                                padding:
+                                    const EdgeInsets.only(left: 10, right: 10),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -146,14 +148,14 @@ class _HomeState extends State<Home> {
                                       style: const TextStyle(
                                           fontSize: 16,
                                           fontWeight: FontWeight.bold,
-                                          color: white),
+                                          color: black),
                                     ),
                                     const SizedBox(height: 5),
                                     Text(
                                       snapshot.data![index].genre,
                                       style: const TextStyle(
                                         fontSize: 13,
-                                        color: white,
+                                        color: black,
                                       ),
                                     ),
                                     const SizedBox(height: 15),
@@ -162,7 +164,7 @@ class _HomeState extends State<Home> {
                                       style: const TextStyle(
                                         fontSize: 13,
                                         fontWeight: FontWeight.w500,
-                                        color: white,
+                                        color: black,
                                       ),
                                     ),
                                     const SizedBox(height: 20),
@@ -187,7 +189,7 @@ class _HomeState extends State<Home> {
             return Text(snapshot.error.toString());
           } else {
             return Container(
-                color: black,
+                color: white,
                 child: ListView.builder(
                     itemCount: snapshot.data!.length,
                     itemBuilder: (context, index) {
@@ -215,7 +217,8 @@ class _HomeState extends State<Home> {
                             ),
                             const SizedBox(height: 10),
                             Padding(
-                                padding: const EdgeInsets.only(right: 140),
+                                padding:
+                                    const EdgeInsets.only(left: 10, right: 10),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -224,14 +227,14 @@ class _HomeState extends State<Home> {
                                       style: const TextStyle(
                                           fontSize: 16,
                                           fontWeight: FontWeight.bold,
-                                          color: white),
+                                          color: black),
                                     ),
                                     const SizedBox(height: 5),
                                     Text(
                                       snapshot.data![index].genre,
                                       style: const TextStyle(
                                         fontSize: 13,
-                                        color: white,
+                                        color: black,
                                       ),
                                     ),
                                     const SizedBox(height: 15),
@@ -240,7 +243,7 @@ class _HomeState extends State<Home> {
                                       style: const TextStyle(
                                         fontSize: 13,
                                         fontWeight: FontWeight.w500,
-                                        color: white,
+                                        color: black,
                                       ),
                                     ),
                                     const SizedBox(height: 20),

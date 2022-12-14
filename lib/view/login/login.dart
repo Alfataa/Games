@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:dio/dio.dart';
+import 'package:ramene/constant/constant.dart';
 import 'package:ramene/viewmodel/user_service.dart';
 
 import '../../model/User.dart';
@@ -21,6 +22,10 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: white,
+        elevation: 0,
+      ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 23),
         child: Column(
@@ -91,18 +96,6 @@ class _LoginState extends State<Login> {
                 ),
               ),
             ),
-            const SizedBox(height: 15),
-            const Align(
-              alignment: Alignment.topLeft,
-              child: Text(
-                "Forgot password?",
-                style: TextStyle(
-                  color: Colors.orangeAccent,
-                  fontSize: 16,
-                  fontFamily: 'Poppins Light',
-                ),
-              ),
-            ),
             const Spacer(),
             ElevatedButton(
               onPressed: () async {
@@ -164,7 +157,7 @@ class _LoginState extends State<Login> {
                 }
               },
               style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.orangeAccent,
+                  backgroundColor: Colors.redAccent,
                   minimumSize: const Size.fromHeight(55),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20),
@@ -196,7 +189,7 @@ class _LoginState extends State<Login> {
                       style: TextStyle(
                         fontFamily: 'Poppins Light',
                         fontSize: 16,
-                        color: Colors.orangeAccent,
+                        color: Colors.redAccent,
                       )),
                 ),
               ],

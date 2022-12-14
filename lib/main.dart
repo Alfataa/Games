@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ramene/view/login/login.dart';
+import 'package:ramene/view/splash/splashscreen.dart';
 
 import 'view/home/home.dart';
 import 'view/profile/profile.dart';
@@ -20,8 +21,8 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Login(),
+    return MaterialApp(
+      home: SplashScreen(),
     );
   }
 }

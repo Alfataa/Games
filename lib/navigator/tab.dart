@@ -26,10 +26,11 @@ class TabsController extends StatelessWidget {
       child: Scaffold(
         key: _scaffoldKey,
         appBar: AppBar(
-          backgroundColor: const Color.fromARGB(255, 0, 0, 0),
+          backgroundColor: Colors.redAccent,
           elevation: 0,
+          centerTitle: true,
           title: const Text(
-            'MaiComic',
+            'GAMES',
             style: TextStyle(
               color: Color.fromARGB(255, 255, 255, 255),
               fontFamily: 'Poppins Bold',
